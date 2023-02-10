@@ -1,4 +1,4 @@
 # WebDev-practise-
-Nauka web dev 
+Web dev practise 
+Codes form toturials and some of my own 
 
-Kody z kursów itp.
