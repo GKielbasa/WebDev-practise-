@@ -1,0 +1,24 @@
+echo time()."<br>"; // wyswietla czas w sekundach od 1 stycznia 1970
+
+        // echo mktime(19, 37, 0, 4, 2, 2005)."<br>"; // wyswietla czas w sekundach od 1 stycznia 1970 do 19:37:00 2 kwietnia 2005
+
+        // echo microtime()."<br>";
+
+        echo date("Y-m-d H:i:s")." Duze H zapis 24h, Dokładnie taki sam zapis wystepuje w MySQL"."<br><br><br><br>"; // wyswietla date w formacie rok-miesiac-dzien
+        //echo date("D-M-Y")."<br>";
+        //echo date("Y-m-d h:i:s")." małe h zonacza zapis 12h"."<br>";
+
+        $dataczas = new DateTime();
+        echo $dataczas->format('Y-m-d H:i:s')."<br>".print_r($dataczas)."<br>"; 
+        //echo "ponizej efekt wykoania print_r(dataczas)"."<br />";
+        //echo print_r($dataczas)."<br>";
+    
+        $dzien = 26;
+        $miesaic = 7;
+        $rok = 1875;
+
+    if (checkdate($miesaic, $dzien, $rok)) { // ta metoda wymaga zapisu miesiac dzien rok
+        echo "<br>Data poprawna";
+    }else {
+        echo "<br>Data niepoprawna";
+    }
